@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/src/widgets/add_button.dart';
 
-class FoodListDetail {
+class FoodListDetails {
   String imageUrl;
   String title;
   String subTitle;
@@ -10,7 +10,7 @@ class FoodListDetail {
   double time;
   int arriveTime;
   Widget addButton;
-  FoodListDetail({
+  FoodListDetails({
     required this.imageUrl,
     required this.title,
     required this.subTitle,
@@ -21,8 +21,8 @@ class FoodListDetail {
   });
 }
 
-List<FoodListDetail> foodCard = [
-  FoodListDetail(
+List<FoodListDetails> foodCard = [
+  FoodListDetails(
     imageUrl:
         'https://plus.unsplash.com/premium_photo-1668618295303-ebcdca3ca3e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFtYnVyZ2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
     title: 'Vecna Burgers\n with Cheese',
@@ -32,7 +32,37 @@ List<FoodListDetail> foodCard = [
     arriveTime: 30,
     addButton: AddButton(),
   ),
-  FoodListDetail(
+  FoodListDetails(
+    imageUrl:
+        'https://plus.unsplash.com/premium_photo-1668618295303-ebcdca3ca3e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFtYnVyZ2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+    title: 'Vecna Burgers\nwith Cheese',
+    subTitle: 'Gourmet Burgers',
+    price: '\$17.97',
+    time: 4.9,
+    arriveTime: 30,
+    addButton: AddButton(),
+  ),
+  FoodListDetails(
+    imageUrl:
+        'https://plus.unsplash.com/premium_photo-1668618295303-ebcdca3ca3e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFtYnVyZ2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+    title: 'Vecna Burgers\nwith Cheese',
+    subTitle: 'Gourmet Burgers',
+    price: '\$17.97',
+    time: 4.9,
+    arriveTime: 30,
+    addButton: AddButton(),
+  ),
+  FoodListDetails(
+    imageUrl:
+        'https://plus.unsplash.com/premium_photo-1668618295303-ebcdca3ca3e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFtYnVyZ2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+    title: 'Vecna Burgers\nwith Cheese',
+    subTitle: 'Gourmet Burgers',
+    price: '\$17.97',
+    time: 4.9,
+    arriveTime: 30,
+    addButton: AddButton(),
+  ),
+  FoodListDetails(
     imageUrl:
         'https://plus.unsplash.com/premium_photo-1668618295303-ebcdca3ca3e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFtYnVyZ2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
     title: 'Vecna Burgers\nwith Cheese',
