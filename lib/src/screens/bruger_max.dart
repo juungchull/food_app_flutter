@@ -1,10 +1,12 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+
 import 'package:flutter_app/src/model/food_list_detail.dart';
 import 'package:flutter_app/src/screens/widgets/food_card_detail.dart';
 import 'package:flutter_app/src/screens/widgets/head_title.dart';
 
-class BrugerMax extends StatelessWidget {
-  const BrugerMax({Key? key}) : super(key: key);
+class BurgerMax extends StatelessWidget {
+  const BurgerMax({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,13 +14,22 @@ class BrugerMax extends StatelessWidget {
       body: Column(
         children: [
           HeadTitle(),
-          ListView.builder(
-            scrollDirection: Axis.vertical,
-            shrinkWrap: true,
-            itemCount: 10,
-            itemBuilder: (BuildContext context, int index) => Padding(
-              padding: const EdgeInsets.only(bottom: 30),
-              child: FoodCardDetail(),
+          Expanded(
+            //A RenderFlex overflowed by 1870 pixels on the bottom.에러를 해결해 줌. expanded~~ good!!
+            child: ListView.builder(
+              physics: BouncingScrollPhysics(),
+              scrollDirection: Axis.vertical,
+              shrinkWrap: true,
+              itemCount: burgerCard.length,
+              itemBuilder: (BuildContext context, int key) => Padding(
+                padding: const EdgeInsets.only(bottom: 30),
+                child: FoodCardDetail(
+                  index: key,
+                  food: [
+                    burgerCard,
+                  ],
+                ),
+              ),
             ),
           ),
         ],

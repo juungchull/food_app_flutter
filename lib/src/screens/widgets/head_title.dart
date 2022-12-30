@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/src/model/food_list_detail.dart';
 
 class HeadTitle extends StatelessWidget {
   const HeadTitle({
@@ -14,15 +15,55 @@ class HeadTitle extends StatelessWidget {
         children: [
           Container(
             height: MediaQuery.of(context).size.height * 0.35,
-            color: Colors.red,
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: NetworkImage(burgerCard[2].imageUrl),
+                    fit: BoxFit.cover),
+                color: Colors.red,
+                borderRadius: BorderRadius.circular(10)),
           ),
           Container(
             padding: EdgeInsets.symmetric(horizontal: 15, vertical: 50),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                CircleAvatar(),
-                CircleAvatar(),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        width: 2,
+                        color: Colors.white,
+                      ),
+                      shape: BoxShape.circle,
+                    ),
+                    child: CircleAvatar(
+                      backgroundColor: Colors.transparent.withOpacity(0.1),
+                      child: Icon(
+                        Icons.keyboard_arrow_left_outlined,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      width: 2,
+                      color: Colors.white,
+                    ),
+                    shape: BoxShape.circle,
+                  ),
+                  child: CircleAvatar(
+                    backgroundColor: Colors.transparent.withOpacity(0.1),
+                    child: Icon(
+                      Icons.search_outlined,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
               ],
             ),
           ),

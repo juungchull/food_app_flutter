@@ -26,7 +26,7 @@ class Card {
 
 List<Card> cardDetail = [
   Card(
-    route: BrugerMax(),
+    route: BurgerMax(),
     url:
         'https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
     sale: 10,
