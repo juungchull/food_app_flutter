@@ -6,7 +6,16 @@ class AddButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: ElevatedButton(onPressed: () {}, child: Text('Add')),
+      width: 150,
+      child: ElevatedButton(
+          onPressed: () {},
+          child: Text('Add'),
+          style: ElevatedButton.styleFrom(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(16),
+            ),
+            backgroundColor: Colors.orange[900],
+          )),
     );
   }
 }

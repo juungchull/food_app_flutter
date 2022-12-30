@@ -32,4 +32,14 @@ List<FoodListDetail> foodCard = [
     arriveTime: 30,
     addButton: AddButton(),
   ),
+  FoodListDetail(
+    imageUrl:
+        'https://plus.unsplash.com/premium_photo-1668618295303-ebcdca3ca3e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFtYnVyZ2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+    title: 'Vecna Burgers\nwith Cheese',
+    subTitle: 'Gourmet Burgers',
+    price: '\$17.97',
+    time: 4.9,
+    arriveTime: 30,
+    addButton: AddButton(),
+  ),
 ];
