@@ -37,15 +37,18 @@ class _BottomMenuListState extends State<BottomMenuList> {
                         decoration: BoxDecoration(
                           color: Colors.red,
                           borderRadius: BorderRadius.circular(20),
+                          image: DecorationImage(
+                              image: NetworkImage(cardDetail[index].url),
+                              fit: BoxFit.cover),
                         ),
                         child: Stack(
                           children: [
-                            Image(
-                              width: double.infinity,
-                              height: double.infinity,
-                              image: NetworkImage(cardDetail[index].url),
-                              fit: BoxFit.cover,
-                            ),
+                            // Image(
+                            //   width: double.infinity,
+                            //   height: double.infinity,
+                            //   image: NetworkImage(cardDetail[index].url),
+                            //   fit: BoxFit.cover,
+                            // ),
                             Positioned(
                               bottom: 10,
                               left: 10,
