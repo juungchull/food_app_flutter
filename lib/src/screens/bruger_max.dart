@@ -1,5 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+import 'package:flutter_app/main.dart';
 
 import 'package:flutter_app/src/model/food_list_detail.dart';
 
@@ -108,6 +109,106 @@ class HeadTitle extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(15),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    height: 50,
+                  ),
+                  Text(
+                    'Burger Town',
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    '42 Riverside St.Norcross,\n GA 30092',
+                    style: TextStyle(
+                      color: Colors.grey,
+                    ),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.alarm_outlined,
+                            color: Colors.green,
+                          ),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Text('4.9'),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.star,
+                            color: Colors.orange,
+                          ),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Text('4.9'),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.local_shipping,
+                            color: Colors.blue,
+                          ),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Text('4.9'),
+                        ],
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Container(
+                        alignment: Alignment.center,
+                        width: 80,
+                        height: 25,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Text('burger'),
+                      ),
+                      Container(
+                        alignment: Alignment.center,
+                        width: 80,
+                        height: 25,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Text('fries'),
+                      ),
+                      Container(
+                        alignment: Alignment.center,
+                        width: 80,
+                        height: 25,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Text('burger'),
+                      ),
+                    ],
+                  )
+                ],
               ),
             ),
           ),

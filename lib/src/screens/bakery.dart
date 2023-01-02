@@ -45,7 +45,6 @@ class HeadTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: MediaQuery.of(context).size.height * 0.46,
-      color: Colors.green,
       child: Stack(
         children: [
           Container(
@@ -109,8 +108,108 @@ class HeadTitle extends StatelessWidget {
               width: MediaQuery.of(context).size.width * 0.92,
               height: MediaQuery.of(context).size.height * 0.27,
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(15),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    height: 50,
+                  ),
+                  Text(
+                    'Burger Town',
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    '42 Riverside St.Norcross,\n GA 30092',
+                    style: TextStyle(
+                      color: Colors.grey,
+                    ),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.alarm_outlined,
+                            color: Colors.green,
+                          ),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Text('4.9'),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.star,
+                            color: Colors.orange,
+                          ),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Text('4.9'),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.local_shipping,
+                            color: Colors.blue,
+                          ),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Text('4.9'),
+                        ],
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Container(
+                        alignment: Alignment.center,
+                        width: 80,
+                        height: 25,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Text('burger'),
+                      ),
+                      Container(
+                        alignment: Alignment.center,
+                        width: 80,
+                        height: 25,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Text('fries'),
+                      ),
+                      Container(
+                        alignment: Alignment.center,
+                        width: 80,
+                        height: 25,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Text('burger'),
+                      ),
+                    ],
+                  )
+                ],
               ),
             ),
           ),
