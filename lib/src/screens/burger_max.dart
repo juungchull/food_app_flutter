@@ -5,9 +5,14 @@ import 'package:flutter_app/src/model/food_list_detail.dart';
 import 'package:flutter_app/src/screens/widgets/food_card_detail.dart';
 import 'package:flutter_app/src/screens/widgets/head_title.dart';
 
-class BurgerMax extends StatelessWidget {
+class BurgerMax extends StatefulWidget {
   const BurgerMax({Key? key}) : super(key: key);
 
+  @override
+  State<BurgerMax> createState() => _BurgerMaxState();
+}
+
+class _BurgerMaxState extends State<BurgerMax> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,12 +28,7 @@ class BurgerMax extends StatelessWidget {
               itemCount: burgerCard.length,
               itemBuilder: (BuildContext context, int key) => Padding(
                 padding: const EdgeInsets.only(bottom: 30),
-                child: FoodCardDetail(
-                  index: key,
-                  food: [
-                    burgerCard,
-                  ],
-                ),
+                child: FoodCardDetail(),
               ),
             ),
           ),

@@ -33,7 +33,7 @@ class _BottomMenuListState extends State<BottomMenuList> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                        height: 155,
+                        height: 150,
                         decoration: BoxDecoration(
                           color: Colors.red,
                           borderRadius: BorderRadius.circular(20),

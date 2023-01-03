@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_app/src/screens/bakery.dart';
-import 'package:flutter_app/src/screens/bruger_max.dart';
+import 'package:flutter_app/src/screens/burger_max.dart';
 import 'package:flutter_app/src/screens/brunch.dart';
 import 'package:flutter_app/src/screens/hamburger.dart';
 import 'package:flutter_app/src/screens/salmon.dart';

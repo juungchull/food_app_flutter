@@ -21,12 +21,7 @@ class Bakery extends StatelessWidget {
               itemCount: burgerCard.length,
               itemBuilder: (BuildContext context, int key) => Padding(
                 padding: const EdgeInsets.only(bottom: 30),
-                child: FoodCardDetail(
-                  index: key,
-                  food: [
-                    bakeryCard,
-                  ],
-                ),
+                child: FoodCardDetail(),
               ),
             ),
           ),

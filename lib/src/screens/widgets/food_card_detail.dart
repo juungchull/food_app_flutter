@@ -4,12 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/src/model/food_list_detail.dart';
 
 class FoodCardDetail extends StatelessWidget {
-  final int index;
-  final List food;
   const FoodCardDetail({
     Key? key,
-    required this.index,
-    required this.food,
   }) : super(key: key);
 
   @override
@@ -39,7 +35,7 @@ class FoodCardDetail extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
               color: Colors.black,
               image: DecorationImage(
-                image: NetworkImage(burgerCard[index].imageUrl),
+                image: NetworkImage(burgerCard[0].imageUrl),
                 fit: BoxFit.cover,
               ),
             ),
@@ -54,7 +50,7 @@ class FoodCardDetail extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  burgerCard[index].title,
+                  burgerCard[1].title,
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -62,7 +58,7 @@ class FoodCardDetail extends StatelessWidget {
                 ),
                 SizedBox(height: 5),
                 Text(
-                  burgerCard[index].subTitle,
+                  burgerCard[0].subTitle,
                   style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
@@ -70,7 +66,7 @@ class FoodCardDetail extends StatelessWidget {
                 ),
                 SizedBox(height: 20),
                 Text(
-                  '${burgerCard[index].price}',
+                  '${burgerCard[0].price}',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -87,7 +83,7 @@ class FoodCardDetail extends StatelessWidget {
                           color: Colors.orange,
                         ),
                         SizedBox(width: 5),
-                        Text('${burgerCard[index].time}'),
+                        Text('${burgerCard[0].time}'),
                       ],
                     ),
                     SizedBox(width: 25),
@@ -99,7 +95,7 @@ class FoodCardDetail extends StatelessWidget {
                           color: Colors.green,
                         ),
                         SizedBox(width: 5),
-                        Text('${burgerCard[index].arriveTime} min'),
+                        Text('${burgerCard[0].arriveTime} min'),
                       ],
                     ),
                   ],
