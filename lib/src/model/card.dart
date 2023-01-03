@@ -47,7 +47,7 @@ List<Card> cardDetail = [
     url:
         'https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
     sale: 10,
-    foodName: 'Burger Max',
+    foodName: 'Brunch',
     foodTime: '25min',
     foodStar: '4.9',
   ),
@@ -56,7 +56,7 @@ List<Card> cardDetail = [
     url:
         'https://images.unsplash.com/photo-1481070555726-e2fe8357725c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
     sale: 20,
-    foodName: 'Mamma\'s Bakery',
+    foodName: 'Hamburger',
     foodTime: '21min',
     foodStar: '4.3',
   ),
@@ -65,7 +65,7 @@ List<Card> cardDetail = [
     url:
         'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
     sale: 10,
-    foodName: 'Burger Max',
+    foodName: 'Taco',
     foodTime: '21min',
     foodStar: '4.9',
   ),
@@ -74,7 +74,7 @@ List<Card> cardDetail = [
     url:
         'https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
     sale: 20,
-    foodName: 'Mamma\'s Bakery',
+    foodName: 'Salmon',
     foodTime: '21min',
     foodStar: '4.3',
   ),
